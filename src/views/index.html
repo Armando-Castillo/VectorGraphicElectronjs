@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vectores</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="containerPrincipal">
+        <h1 class="titulo d-flex justify-content-center">Graficadora de vectores</h1>
+        <div class="row pt-4">
+            <div class="col-md-9" id="mapaDiv">
+                <div class="map">
+                    <h4 id="valores">Vector resultante: </h4>
+                    <canvas id="canvas" class="canvasMap"></canvas>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <form class="form-group">
+                    <h3 class="pt-3 pb-3 d-flex justify-content-center">Ingresa los vectores</h3>
+                    <label>Norte/VectorA</labe>
+                    <input type="text" class="form-control mb-3" placeholder="Vector A" id="valorA" name="valorA"  value="0">
+                    <label>Este/VectorB</label>
+                    <input type="text" class="form-control mb-3" placeholder="Vector B" id="valorB" name="valorB"  value="0">
+                    <label>Sur/VectorC</label>
+                    <input type="text" class="form-control mb-3" placeholder="Vector C" id="valorC" name="valorC"  value="0">
+                    <label>Oeste/VectorD</label>
+                    <input type="text" class="form-control mb-3" placeholder="Vector D" id="valorD" name="valorD"  value="0">
+                    <input type="submit" class="btn btn-block btn-success mt-3 mb-3" id="sumar" value="Sumar"></button>
+                    <button class="btn btn-block btn-danger mt-3 mb-3" id="limpiar">Limpiar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
